@@ -37,14 +37,6 @@ const teamList = [
     },
 ]
 
-// creo costante UL
-const unorderList = document.getElementById("list");
-
-// stampo su console le informazioni di ogni membro del team
-// for (let key in teamList) {
-//     console.log(teamList[key]);
-// }
-
 // stampo le info sul documento sottoforma di stringhe
 for (let i = 0; i < teamList.length; i++) {
     let teamName = teamList[i].nome;
@@ -53,10 +45,6 @@ for (let i = 0; i < teamList.length; i++) {
 
     let teamPhoto = teamList[i].photo;
 
-    let ItemList = document.createElement("li");
-
-    unorderList.append(ItemList);
-
-    ItemList.innerHTML= teamName + " / " + teamRole + " / " + teamPhoto;
+    
 
 }
