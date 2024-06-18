@@ -37,4 +37,7 @@ const teamList = [
     },
 ]
 
-console.log(teamList);
+// stampo su console le informazioni di ogni membro del team
+for (let key in teamList) {
+    console.log(teamList[key]);
+}
